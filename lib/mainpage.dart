@@ -3,11 +3,14 @@ import 'package:flutter_tutorial/implementasi/simple_page.dart';
 import 'package:flutter_tutorial/shortcut/short.dart';
 import 'package:flutter_tutorial/tutorial/animated.dart';
 import 'package:flutter_tutorial/tutorial/anonymous.dart';
+import 'package:flutter_tutorial/tutorial/appbarstyle.dart';
 import 'package:flutter_tutorial/tutorial/containerLearn.dart';
+import 'package:flutter_tutorial/tutorial/dragable.dart';
 import 'package:flutter_tutorial/tutorial/image.dart';
 import 'package:flutter_tutorial/tutorial/latihanflexible.dart';
 import 'package:flutter_tutorial/tutorial/listview.dart';
 import 'package:flutter_tutorial/tutorial/rowcoloumn.dart';
+import 'package:flutter_tutorial/tutorial/spacer.dart';
 import 'package:flutter_tutorial/tutorial/stateful.dart';
 import 'package:flutter_tutorial/tutorial/textTutor.dart';
 import 'package:flutter_tutorial/tutorial/textstyle.dart';
@@ -27,7 +30,7 @@ class _MainPageState extends State<MainPage> {
       Rute(nama_page: 'Row & Column', page: const LatihanRowColumn()),
       Rute(
         nama_page: 'Container',
-        page: LatihanContainer(),
+        page: const LatihanContainer(),
       ),
       Rute(nama_page: 'Stateful Widget', page: const LatihanStateful()),
       Rute(nama_page: 'Anonymous Widget', page: LatihanAnonymous()),
@@ -43,6 +46,9 @@ class _MainPageState extends State<MainPage> {
       Rute(nama_page: 'Flexible Layout', page: const LatihanFlexible()),
       Rute(nama_page: 'Stack & Align Widget', page: const LatihanFlexible()),
       Rute(nama_page: 'Image Widget', page: const LatihanImage()),
+      Rute(nama_page: 'Spacer', page: const LatihanSpacer()),
+      Rute(nama_page: 'Dragable', page: const LatihanDragable()),
+      Rute(nama_page: 'AppBar', page: const LatihanAppBar()),
     ];
 
     List<Widget> rutes = [];

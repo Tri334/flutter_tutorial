@@ -13,16 +13,73 @@ class LatihanImage extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Row(
+          Wrap(
+            // spacing: 5,
+            // runSpacing: 5,
             children: [
               Container(
-                color: Colors.blue,
+                color: Colors.cyan,
                 padding: const EdgeInsets.all(5),
-                height: 600,
-                width: 600,
+                height: 300,
+                width: 300,
                 child: Image.asset(
                   'assets/image/kucing.jpg',
                   fit: BoxFit.cover,
+                ),
+              ),
+              Container(
+                color: Colors.red,
+                padding: const EdgeInsets.all(5),
+                height: 300,
+                width: 300,
+                child: Image.asset(
+                  'assets/image/kucing.jpg',
+                  fit: BoxFit.none,
+                ),
+              ),
+              Container(
+                color: Colors.amber,
+                padding: const EdgeInsets.all(5),
+                height: 300,
+                width: 300,
+                child: Image.asset(
+                  'assets/image/kucing.jpg',
+                  fit: BoxFit.contain,
+                ),
+              ),
+              Container(
+                color: Colors.lightBlue,
+                padding: const EdgeInsets.all(5),
+                height: 300,
+                width: 300,
+                child: Image.asset(
+                  'assets/image/kucing.jpg',
+                  fit: BoxFit.cover,
+                ),
+              ),
+              Container(
+                color: Colors.lightGreen,
+                padding: const EdgeInsets.all(5),
+                height: 300,
+                width: 300,
+                child: const Image(
+                  image: NetworkImage(
+                    'https://cdn-asset.jawapos.com/wp-content/uploads/2020/12/baju-untuk-kucing-560x390.jpg',
+                  ),
+                  fit: BoxFit.contain,
+                  repeat: ImageRepeat.repeat,
+                ),
+              ),
+              Container(
+                color: Colors.pink,
+                padding: const EdgeInsets.all(5),
+                height: 300,
+                width: 300,
+                child: const Image(
+                  image: NetworkImage(
+                    'https://cdn-asset.jawapos.com/wp-content/uploads/2020/12/baju-untuk-kucing-560x390.jpg',
+                  ),
+                  fit: BoxFit.fitHeight,
                 ),
               ),
             ],

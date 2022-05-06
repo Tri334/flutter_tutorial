@@ -25,6 +25,7 @@ class TextDummy {
 class Shortcut {
   navigasi({teks = '', go = '', route}) {
     return Container(
+      padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
       child: ElevatedButton(
         onPressed: () {
           Navigator.push(route, MaterialPageRoute(builder: (context) {
@@ -33,12 +34,16 @@ class Shortcut {
         },
         child: Text(teks),
       ),
-      padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
     );
   }
 
   teksTutor({teks = '', color = Colors.white}) {
     return Container(
+      padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
+      height: 100,
+      width: 200,
+      color: color,
+      margin: EdgeInsets.fromLTRB(10, 10, 10, 10),
       child: Text(
         teks,
         style: TextStyle(fontSize: 15),
@@ -46,23 +51,18 @@ class Shortcut {
         textAlign: TextAlign.center,
         overflow: TextOverflow.ellipsis,
       ),
-      padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
-      height: 100,
-      width: 200,
-      color: color,
-      margin: EdgeInsets.fromLTRB(10, 10, 10, 10),
     );
   }
 
   getBack({teks = 'Back', context = ''}) {
     return Container(
+      margin: EdgeInsets.all(10),
       child: ElevatedButton(
         onPressed: () {
           Navigator.pop(context);
         },
         child: Text(teks),
       ),
-      margin: EdgeInsets.all(10),
     );
   }
 
@@ -73,6 +73,12 @@ class Shortcut {
         color: Colors.blue,
         borderRadius: BorderRadius.circular(25),
       ),
+      // color: Colors.blue,
+      // color: Colors.blue,
+      padding: EdgeInsets.all(10),
+      margin: EdgeInsets.all(10),
+      height: 100,
+      width: 200,
       child: Center(
         child: Text(
           teks,
@@ -84,12 +90,6 @@ class Shortcut {
           ),
         ),
       ),
-      // color: Colors.blue,
-      // color: Colors.blue,
-      padding: EdgeInsets.all(10),
-      margin: EdgeInsets.all(10),
-      height: 100,
-      width: 200,
     );
   }
 }
